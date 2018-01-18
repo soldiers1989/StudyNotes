@@ -22,3 +22,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+	
+2.<dependencyManagement>里面引入大版本,这样<dependencies>里面不指定版本就会自动引入Brixton.SR4.RELEASE这个版本的包了

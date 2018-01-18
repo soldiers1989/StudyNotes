@@ -1,0 +1,9 @@
+发布到git:
+	hexo clean
+	hexo generate
+	hexo deploy
+
+启动本地:
+	hexo server
+debug模式启动:
+	hexo s --debug
