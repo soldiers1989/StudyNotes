@@ -1,0 +1,9 @@
+#FROM命令指定初始镜像,在此基础上构建项目镜像
+FROM daocloud.io/java:latest
+VOLUME /tmp
+RUN echo "Asia/Shanghai" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
+ADD core-service-1.0-SNAPSHOT.jar app.jar
+#RUN apt-get update && apt-get install -y --force-yes --no-install-recommends fonts-wqy-microhei ttf-wqy-zenhei
+RUN sh -c 'touch /app.jar'
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+

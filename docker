@@ -1,0 +1,16 @@
+Docker 关键字解析
+Docker Image:
+
+　　Docker image是一个只读模板，用于创建Docker容器。Image中可以包含linux操作系统、Apache或者Web应用程序等等，用户可以下载已经创建好的Docker image，也可以创建Docker image给其他用户使用。每个image是由很多层组成，Docker通过Union File Systems将这些层绑定在一个image中。每个image都以一个初级image做为基础，然后通过操作指令在这些初级image上添加新层，操作指令可以是运行的命令、添加文件或目录或者创建可用操作环境等。这些操作指令都被保存在“Dockerfile”文件中。
+
+Docker Container:
+
+　　Docker image的运行实例。Docker Containers可以运行、启动、停止或者被删除，每个container都是隔离的安全应用平台。
+
+Docker registries:
+
+　　Docker registries用于保存Docker image，也分公用和私用二种。公用的Docker registry就是Docker Hub，用户也可以创建私有的Docker registry，为其他用户提供Docker images下载。
+
+Dockerfiles:
+
+　　Dockerfile是对Docker Container创建过程的描述脚本。每个Dockerfile详细说明了开始的基础镜像，以及随后一系列在容器中运行的命令和添加到容器中的文件。Dockerfile也可以说明容器对外的端口，启动时的工作目录和缺省执行的命令。
