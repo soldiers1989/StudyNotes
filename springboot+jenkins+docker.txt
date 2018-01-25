@@ -1,0 +1,34 @@
+1.maven的settings文件里加入:
+	<pluginGroups>    
+		<pluginGroup>com.spotify</pluginGroup>    
+	</pluginGroups>
+	
+2.repository的首字母不允许大写,imageName首字母小写
+
+3.maven Goals:
+		clean
+		compile
+		package
+		install
+		-DskipTests
+		
+4.execute shell:
+	#!/bin/sh
+	cd LocalResp
+	echo $PWD
+	export M2_HOME=/usr/local/maven3/apache-maven-3.3.9
+	export JAVA_HOME=/usr/local/jdk/jdk1.8.0_161
+	export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$M2_HOME/bin:$PATH
+	export DOCKER_HOST=tcp://127.0.0.1:4243
+
+	mvn docker:build
+
+	docker run -d -p 8080:8080 --name liucan-idea1 liucan-idea1
+	
+服务器[/etc/sysconfig/docker]
+OPTIONS="-H tcp://127.0.0.1:4243"
+
+5.Credentials：
+	git url使用https链接,用户名密码直接填git的用户名密码
+
+
