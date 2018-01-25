@@ -1,0 +1,8 @@
+前台引入:jquery.md5.js
+加密:$.md5(str)
+
+递交到后台:
+
+后台引入commons-codec-1.9.jar
+取出数据库的密码，用以下方法加密，会得到同样的字符串，比较一下
+DigestUtils.md5Hex

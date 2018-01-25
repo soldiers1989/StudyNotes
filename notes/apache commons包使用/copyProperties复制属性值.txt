@@ -1,0 +1,26 @@
+传统方法如下：
+//得到TeacherForm
+ TeacherForm teacherForm=(TeacherForm)form;
+ //构造Teacher对象
+ Teacher teacher=new Teacher();
+ //赋值
+ teacher.setName(teacherForm.getName());
+ teacher.setAge(teacherForm.getAge());
+ teacher.setGender(teacherForm.getGender());
+ teacher.setMajor(teacherForm.getMajor());
+ teacher.setDepartment(teacherForm.getDepartment());
+  
+ //持久化Teacher对象到数据库
+ HibernateDAO= ;
+ HibernateDAO.save(teacher);
+
+使用BeanUtils后，代码就大大改观了，如下所示：
+//得到TeacherForm
+ TeacherForm teacherForm=(TeacherForm)form;
+ //构造Teacher对象
+ Teacher teacher=new Teacher();
+ //赋值
+ BeanUtils.copyProperties(teacher,teacherForm);
+ //持久化Teacher对象到数据库
+ HibernateDAO= ;
+ HibernateDAO.save(teacher);

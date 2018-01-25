@@ -1,0 +1,16 @@
+每天一个命令：http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
+
+1.docker run项目： http://blog.csdn.net/caox_nazi/article/details/78366584
+
+2.vim编辑文本： http://www.linuxidc.com/Linux/2016-09/135288.htm
+
+3.linux安装mysql : http://www.linuxidc.com/Linux/2016-09/135288.htm
+
+4.http://www.cnblogs.com/peida/archive/2012/12/05/2803591.html
+
+5.linux安装jdk: http://www.linuxidc.com/Linux/2016-06/132678.htm
+	去官网下载jdk压缩包: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 
+	
+6.安装git: https://www.cnblogs.com/lhbryant/p/6928894.html
+
+7.切换不到jenkins用户: http://blog.csdn.net/u013066244/article/details/52694772

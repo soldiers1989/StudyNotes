@@ -1,0 +1,5 @@
+1.@Param("username")
+  当方法需传入多个参数时,加上以上注解。
+  如:public void insert(@Param("username")String username,@Param("passw")String passw){...}
+  在mybatis的xml中就可以用#{username}来获取值了。
+  如果多参数不这么搞的话会报错。

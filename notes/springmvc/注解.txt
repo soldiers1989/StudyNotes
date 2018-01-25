@@ -1,0 +1,59 @@
+@responsebody
+表示该方法的返回结果直接写入HTTP response body中
+一般在异步获取数据时使用，在使用@RequestMapping后，
+返回值通常解析为跳转路径，加上@responsebody后返回结果不会被解析为跳转路径，
+而是直接写入HTTP response body中。比如异步获取json数据，加上@responsebody后，会直接返回json数据。
+
+@Controller和@RestController的关系：
+ 共同点：
+ 都是用来表示Spring某个类的是否可以接收HTTP请求。
+ 
+ 区别:
+ @RestController是@Controller和@ResponseBody的结合体，两个标注合并起来的作用。
+ 示例：
+@Controller  
+@ResponseBody  
+public class MyController { }  
+  
+@RestController  
+public class MyRestController { } 
+
+@Transactional(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
+开启事务，rollbackFor指抛异常时回滚。
+
+@RequestParam
+public void test(@RequestParam(value="userName",required=false) String userName){}
+用于参数绑定。required指是否必须传参数，false表示可以不传这个参数进来，默认是true,不传就报错。
+
+@RequestMapping("test/user")
+访问的url
+
+@SessionAttributes
+将特定的值转存到session,以便请求结束后还能访问到这些属性值。
+
+@ModelAttribute：
+public String login2(@ModelAttribute User user){...}  User:userName/passWord
+--前台form中用name表示,name="userName"或name="passWord"
+表示传进来的是对象。
+
+@Qualifier("..")
+如果当Spring上下文中存在不止一个UserDao类型的bean时，就会抛出BeanCreationException异常;
+ 1.
+	@Autowired   
+	@Qualifier("userServiceImpl")   
+	public IUserService userService;
+ 2.
+	@Autowired   
+		public void setUserDao(@Qualifier("userDao") UserDao userDao) {   
+		this.userDao = userDao;   
+	}  
+	
+例如定义一个交通工具类：Vehicle，以及它的子类Bus和Sedan。
+如果用@Autowired来找Vehicle的话，会有两个匹配的选项Bus和Sedan。为了限定选项，可以象下面这样。
+  @Autowired
+  @Qualifier("car")
+  private Vehicle vehicle;
+  
+@DependsOn({"a","b"})
+强制初始化a和b
+

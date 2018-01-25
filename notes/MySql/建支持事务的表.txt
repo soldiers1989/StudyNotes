@@ -1,0 +1,3 @@
+mysql的表分为两种类型:
+MyISAM 和InnoDB
+http://blog.csdn.net/xifeijian/article/details/20316775

@@ -1,0 +1,2 @@
+1. @RequiresAuthentication
+   表示当前Subject已经通过login进行了身份验证；即Subject. isAuthenticated()返回true。

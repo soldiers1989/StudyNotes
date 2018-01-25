@@ -1,0 +1,4 @@
+tomcat>>Edit Configurations>>
+deployment>>
+deploy at the server startup>>
+点击右边加号，选择war包，Applys

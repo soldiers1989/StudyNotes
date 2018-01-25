@@ -1,0 +1,2 @@
+1、应用代码通过Subject来进行认证和授权，而Subject又委托给SecurityManager；
+2、我们需要给Shiro的SecurityManager注入Realm，从而让SecurityManager能得到合法的用户及其权限进行判断。

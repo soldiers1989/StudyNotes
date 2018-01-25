@@ -1,0 +1,26 @@
+1.concat(a,b...) -> 字符串拼接
+
+2.length(a) -> 字符串长度
+
+3.LOCATE(substr,str)
+  POSITION(substr IN str)
+  返回子串substr 在字符串str 第一个出现的位置，如果substr 不是在str 里面，返回0.
+  
+  mysql> select LOCATE('bar', 'foobarbar');
+  -> 4
+  mysql> select LOCATE('xbar', 'foobar');
+  -> 0
+  LOCATE(substr,str,pos)
+  返回子串substr 在字符串str 第一个出现的位置，从位置pos 开始。如果substr 不是在str 里面，返回0。
+  
+  mysql> select LOCATE('bar', 'foobarbar',5);
+  -> 7
+  
+  INSTR(str,substr)
+  返回子串substr 在字符串str 中的第一个出现的位置
+  
+4. lpad(a,len,b)
+
+5. space(N) 返回由N个空格组成的字符串
+
+6. lower(A),upper(b) 变成大写小写

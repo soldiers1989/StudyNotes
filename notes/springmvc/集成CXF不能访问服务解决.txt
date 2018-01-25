@@ -1,0 +1,3 @@
+用JRebel启动Tomcat的时候会报错:soap1.1已经启动。
+
+别用JRebel启动Tomcat就不会有这个问题了。

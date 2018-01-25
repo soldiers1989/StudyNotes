@@ -1,0 +1,17 @@
+问题：
+  将MyBatis的mapper映射文件放在java的mapper包下时,报错映射文件没绑定。
+  发现在classes下没发现xml映射文件。
+  因为IDEA默认配置文件全部放在resoures目录下。
+  
+  解决方案：
+  在pom.xml文件中添加如下配置：
+  <build>  
+    <resources>  
+        <resource>  
+            <directory>src/main/java</directory>  
+            <includes>  
+                <include>**/*.xml</include>  
+            </includes>  
+        </resource>  
+    </resources>  
+</build>  

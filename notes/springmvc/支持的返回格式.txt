@@ -1,0 +1,2 @@
+spring mvc 支持如下的返回方式：
+ ModelAndView, Model, ModelMap, Map,View, String, void;

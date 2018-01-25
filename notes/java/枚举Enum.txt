@@ -1,0 +1,27 @@
+public class Constants {
+	// 订单状态
+	public enum OrderStatusEnum {
+		APPLY(10, "申请"), MOBILE(15, "服务密码"), CREDIT(20, "征信"), SOCIAL(30,
+				"社保/公积金"), PRE(40, "获得额度"), STORE(50, "选择门店"), SUBMIT(60, "提交未分配"), ALLOCATION(
+				65, "分配跟单"), SUCCESS(70, "跟单通过"), FAIL(80, "跟单退单");
+
+		private Integer code;
+		private String desc;
+
+		private OrderStatusEnum(Integer code, String desc) {
+			this.code = code;
+			this.desc = desc;
+		}
+
+		public Integer getCode() {
+			return code;
+		}
+
+		public String getName() {
+			return desc;
+		}
+	}
+}
+
+类Constants里面定义了一个枚举类型,
+通过调用Constants.OrderStatusEnum.APPLY.getCode()得到code。getName()则获得值。

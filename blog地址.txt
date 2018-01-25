@@ -1,0 +1,111 @@
+1.http://blog.didispace.com/
+
+2.spring+redis
+http://blog.csdn.net/defonds/article/details/48716161
+
+3.springmvc shiro 
+http://blog.csdn.net/clj198606061111/article/details/24185023
+http://jinnianshilongnian.iteye.com/blog/2019547
+http://www.cnblogs.com/learnhow/p/5694876.html
+
+4.springcloud:
+http://www.cnblogs.com/skyblog/p/5129603.html
+http://zhidao.baidu.com/link?url=TvKrm5X5TpnELwshFybkWTjapZkMDWz6LdKtHF57yPyx7SwEeJ_UoGajb9KjPXqw9HdfXpJGRsCwcddDqUT6uNg1ok87BZW_cl_AwaiU6bC
+
+5.源码之家
+http://www.mycodes.net/154/8520.html
+
+6.mongo语法
+http://www.runoob.com/mongodb/mongodb-query.html
+
+7.springboot定时任务
+http://www.tuicool.com/articles/ayau2i
+定时任务cron表达式
+http://rainbowdesert.iteye.com/blog/2107220
+
+8.ajax跨域请求问题
+http://blog.csdn.net/swweb/article/details/9712645
+
+9.Docker 17.03系列教程（一）Docker EE/Docker CE简介与版本规划
+http://www.itmuch.com/docker/docker-1/
+
+docker文档地址: https://docs.docker.com/
+
+10.RabbitMQ地址: http://www.tuicool.com/articles/AvUnE3J
+	http://blog.csdn.net/jack281706/article/details/73742522
+	
+   http://412887952-qq-com.iteye.com/blog/2319708
+   创建vhost/queue/exchange
+   http://blog.csdn.net/zheng911209/article/details/49949303
+   
+11.JSON相关:
+   http://blog.csdn.net/asdfsadfasdfsa/article/details/52587965
+   
+12.git切换分支：
+	https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6
+	
+13.springcloud文档：
+	https://springcloud.cc/spring-cloud-netflix-zhcn.html
+	
+	工具：upsource
+	
+14.Linux编辑文本
+	http://www.jb51.net/os/RedHat/211444.html
+	
+15.springcloud相关
+	{《跟我学 Spring Cloud 开源项目视频公开课系列》
+	
+16.logback每天生成日志
+	http://www.360doc.com/content/14/1016/15/8072791_417440479.shtml
+	
+17.Springcloud+docker
+    http://blog.csdn.net/forezp/article/details/70198649
+	
+   windows下docker
+    http://blog.csdn.net/qq_32971807/article/details/53558049
+	
+18.nexus 代码deploy到nexus上
+	http://www.cnblogs.com/shihaiming/p/6410813.html
+	
+19.swagger2
+	http://www.jianshu.com/p/8033ef83a8ed/
+	
+20.mybatis insert返回主键id,注意点：keyProperty="customerBillId"要是model的id值
+	http://blog.csdn.net/gisredevelopment/article/details/34202123
+http://spring4all.com/article/55
+
+
+21.Java三种代理方式
+	https://www.cnblogs.com/cenyu/p/6289209.html
+
+
+
+《跟我学 Spring Cloud 开源项目视频公开课系列》
+http://spring4all.com/article/55
+
+《跟我学 Spring Cloud 开源项目视频公开课系列》
+http://spring4all.com/article/55
+
+「每日热门文章」
+《Spring Cloud Stream 使用指北》
+http://spring4all.com/article/46
+
+「每日热门议题」
+《IDEA Jrebel 注册码》
+http://spring4all.com/question/41
+
+《官方 Spring 周报 - 20170606》
+http://spring4all.com/article/54
+
+《开源spring-boot-starter-hbase》
+http://spring4all.com/article/53
+
+《RabbitMQ 的消息持久化与 Spring AMQP 的实现剖析》
+http://spring4all.com/article/52
+
+《Spring AMQP 实战 - 整合 RabbitMQ 发送邮件》
+http://spring4all.com/article/51
+
+《使用zipkin做分布式链路监控》
+http://spring4all.com/article/50
+}

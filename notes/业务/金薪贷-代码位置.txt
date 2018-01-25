@@ -1,0 +1,5 @@
+1.OrderCustomerController:
+  /getTelCode   :    获取手机验证码
+  /checkCode    :    校验验证码
+  
+2.微信中转程序:WeixinAction,点击申请额度时，MsgType为"event",eventType为"view"。

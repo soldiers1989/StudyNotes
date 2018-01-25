@@ -1,0 +1,26 @@
+切入点表达式:
+1.如(String)表示匹配一个String参数的方法；(*,String)表示匹配有两个参数的方法，第一个参数可以是任意类型，而第二个参数是String类型；可以用(..)表示零个或多个任意参数。
+　　现在来看看几个例子：
+　　1）execution(* *(..)) 表示匹配所有方法
+　　2）execution(public * com. savage.service.UserService.*(..)) 表示匹配com.savage.server.UserService中所有的公有方法
+　　3）execution(* com.savage.server..*.*(..)) 表示匹配com.savage.server包及其子包下的所有方法
+
+2.pointcut="@annotation(com.vcredit.framework.annotation.Log)"
+  以上语句表示：
+  切入点是任何加了自定义注解com.vcredit.framework.annotation.Log的点。
+  
+  自定义注解：
+  @Documented
+  @Target({ElementType.METHOD})
+  @Retention(RetentionPolicy.RUNTIME)
+  public @interface Log {
+
+  }
+  
+  MDC.put();
+  在log.properties里配置数据库信息以及插入语句，然后用MDC存入数据就可以将数据存入数据库。
+  
+  spring配置的是父容器,springmvc配置的是子容器,组件扫描的配置子容器会覆盖父容器。
+  比如service层要在父容器里扫描才能使用事务管理,所以要在子容器中排除掉。
+  
+  

@@ -1,0 +1,8 @@
+1.只需要在主配置 Java 类上添加
+“@EnableAutoConfiguration”注解就可以启用自动配置
+
+ @EnableAutoConfiguration - 定义了这是一个Spring Boot应用
+ 
+2.@EnableDiscoveryClient - 运行服务被注册到注册服务中
+
+3.@Import(AccountsWebApplication.class) 引入配置类

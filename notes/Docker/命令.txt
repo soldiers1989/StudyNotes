@@ -1,0 +1,13 @@
+1.利用image运行container：
+	docker run -it --rm -p 8888:8888 -v /c/Users/tingting/dropbox/code:/root/opt/workspace -v /c/Users/tingting/dropb
+	（1）利用参数 -v 
+（2）冒号前为宿主机目录(只支持C盘目录)，必须为绝对路径 
+① /c/Users/tingting/dropbox/code: 
+本机的C:\Users\tingting\dropbox\code文件夹 
+② /c/Users/tingting/dropbox/data 
+本机的C:\Users\tingting\dropbox\data文件夹 
+（3）冒号后为镜像内挂载的路径 
+① /root/opt/workspace 
+docker中的文件夹/root/opt/workspace 
+② /root/data 
+docker中的文件夹/root/data 

@@ -1,0 +1,16 @@
+function addPanel(name,url){  
+            var dd = $('#tt').tabs('exists',name);  
+			//存在就选中，不存在就新建
+            if(dd){  
+                $('#tt').tabs('select',name);  
+            }else{  
+            var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;height:100%;"></iframe>';  
+            $('#tt').tabs('add',{  
+                id: name,  
+                title: name,  
+                //href:'./'+pageName, //使用href是用过ajax请求方式，将请求页面内容加载到本页面中。   缺点：js引入不好控制  
+                content:content,      //使用content的iframe方式：将整个页面嵌入到tab页内。  缺点：js重复加载  
+                closable: true  
+            });  
+            }  
+        }  

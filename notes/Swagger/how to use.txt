@@ -1,0 +1,17 @@
+1.引入包:
+	<dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger2</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+	
+2.配置类SwaggerConfig.java
+
+3.在入口处加上@ApiOperation(value = "保存用户")注解
+
+4.访问http://localhost:8080/swagger-ui.html

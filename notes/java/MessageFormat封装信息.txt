@@ -1,0 +1,4 @@
+第一个参数时模板，后面是参数值：
+SMS_TEMPLATE = "【贷贷看】验证码：{0}，有效时间为{1}分钟。注意该验证码为重要敏感信息，请勿泄露！";
+
+String content = MessageFormat.format(MessageTemplate.SMS_TEMPLATE, smsCode, Constants.DEFAULT_SMSCODE_EXPIRE_MINUTES);

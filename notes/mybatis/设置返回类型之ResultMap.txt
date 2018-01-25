@@ -1,0 +1,18 @@
+resultMap是自定义的类型,例如:
+ <resultMap type="com.vcredit.o2o.model.Qcr" id="qcr">
+    <result property="qcrId" column="qcr_id" />
+    <result property="qcrPath" column="qcr_path" />
+    <result property="sceneId" column="scene_id" />
+    <result property="relStatus" column="rel_status" />
+    <result property="createTime" column="create_time" />
+    <result property="updateTime" column="update_time" />
+    <result property="qcrType" column="qcr_type" />
+    <result property="userName" column="real_name"/>
+    <result property="userTel"  column="user_tel"/>
+    <result property="agentId" column="agent_id" />
+  </resultMap>
+  
+  然后设置返回类型为qcr
+  
+  <select id="select" resultMap="qcr">
+  </select>

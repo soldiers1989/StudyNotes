@@ -1,0 +1,21 @@
+OrderServiceImpl.java
+
+Thread thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    CreditAuthInfo info = creditAuthInfoRepo.findByOrderId(orderId);
+                    CreditAuthorizationParam creditParam = new CreditAuthorizationParam();
+                    if (info != null) {
+                        creditParam.setAuthorization(info.getCreditAuthorizationBase64());
+                        creditParam.setIdcardImage(info.getIdcardImageBase64());
+                        creditParam.setName(info.getName());
+                        creditParam.setCardNo(info.getIdcardNo());
+                        try {
+                            creditAuthorization(orderId, creditParam, currentAccount);
+                        } catch (Exception e) {
+                            addCreditAuthInfo(orderId, creditParam);
+                        }
+                    }
+                }
+            });
+            thread.start();

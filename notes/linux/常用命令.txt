@@ -1,0 +1,27 @@
+
+1.查看ip：ifconfig -a
+
+2.linux shell与windows的cmd相似
+
+3.sudo是一个允许特定的用户组用另一个用户(典型的是root)的特权来运行一个命令
+
+4.visudo这条命令能打开并编辑 /etc/sudoers 文件,用root打开
+
+5.vim模式可编辑文件,按i编辑,按Esc,输入:wq退出并保存编辑。
+
+6.解压
+	1、*.tar 用 tar –xvf 解压
+	2、*.gz 用 gzip -d或者gunzip 解压
+	3、*.tar.gz和*.tgz 用 tar –xzf 解压  tar -zxvf 
+	4、*.bz2 用 bzip2 -d或者用bunzip2 解压
+	5、*.tar.bz2用tar –xjf 解压
+	6、*.Z 用 uncompress 解压
+	7、*.tar.Z 用tar –xZf 解压
+	8、*.rar 用 unrar e解压
+	9、*.zip 用 unzip 解压
+
+
+
+
+
+

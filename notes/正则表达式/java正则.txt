@@ -1,0 +1,11 @@
+
+//表达式
+Pattern pattern = Pattern.compile(regex);
+//匹配字符串
+Matcher matcher = pattern.matcher(str2);
+//得到匹配的字符串
+if(matcher.find()){
+//http://winter8.iteye.com/blog/1463244
+	//得到第0组——整个匹配  
+	String ss = matcher.group(0);
+}

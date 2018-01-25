@@ -1,0 +1,22 @@
+spring支持编程式事务管理和声明式事务管理两种方式
+
+和编程式事务相比，声明式事务唯一不足地方是，后者的最细粒度只能作用到方法级别，
+无法做到像编程式事务那样可以作用到代码块级别。
+
+声明式事务管理也有两种常用的方式，一种是基于tx和aop名字空间的xml配置文件，另一种就是基于@Transactional注解。
+
+事务特性：
+ 事务隔离级别
+ 事务传播行为
+ 事务超时
+ 事务只读属性
+ 
+ ------------------------------------------
+ 事务无法回滚的问题:
+ 在spring配置文件中配置了包含事务的组件扫描,在springmvc中也配置了组件扫描，容器先加载spring的带事务的扫描，
+ 后加载了springmvc不带事务的组件扫描。事务会被覆盖掉。需要将配置事务的模块从springmvc的组件扫描模块中去掉。
+ <context:component-scan base-package="com.lc" >
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository" />
+ </context:component-scan>

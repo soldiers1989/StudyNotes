@@ -1,0 +1,5 @@
+配置用默认的，然后指定一个参数：
+archetypeCatalog=internal
+
+http://blog.csdn.net/zhouhao1256/article/details/51824615
+

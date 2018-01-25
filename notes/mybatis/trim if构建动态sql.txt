@@ -1,0 +1,19 @@
+<update id="batchUpdateObjects" parameterType="java.util.List">
+		 <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+			update `t_order_overview` 
+			
+			--prefix:在开头增加"set"-------------------------------------
+			--prefixOverrides:校验逗号,多余的去掉。
+			--suffix和suffixOverrides是后缀，用法相同
+			<trim prefix="set" prefixOverrides=",">
+		    	<if test="item.isSyn != null">
+		    		 `is_syn` = #{item.isSyn}
+		    	</if>
+		    	<if test="item.loanAmount != null">
+		    		 ,`loan_amount`= #{item.loanAmount}
+		    	</if>
+			</trim> 
+			  WHERE `order_id` = #{item.orderId}
+		</foreach>--批量执行update语句
+	</update>
+	

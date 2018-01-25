@@ -1,0 +1,6 @@
+修改用户订单状态:
+SELECT * from t_third_account WHERE third_name LIKE "%火山%";
+
+SELECT * from t_order_overview where user_id = '31138';
+
+update t_order_overview set is_close=1 WHERE order_id = '40833'

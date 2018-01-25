@@ -1,0 +1,40 @@
+1.加载properties配置文件，一般将数据库配置放在properties文件中：
+   <context:property-placeholder location="classpath*:/config/*.properties" />
+   
+2.配置组件扫描：
+   <context:component-scan base-package="com.vcredit" />
+   
+3.配置默认的注解映射的支持：
+   <context:annotation-config />
+   
+4.配置动态代理：
+   <aop:aspectj-autoproxy proxy-target-class="true" />
+   如果proxy-target-class=true，则强制使用cglib,不配置则使用jdk的。
+   
+5.spring事务配置：
+   先配dataSource,再配transactionManager,最后再配置tx
+   -->>dataSource:
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="url" value="${jdbc.mysql.url}?useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true" />
+		<property name="username" value="${jdbc.mysql.userName}" />
+		<property name="password" value="${jdbc.mysql.password}" />
+		<property name="driverClassName" value="${jdbc.mysql.driver}" />
+		<!--maxActive: 最大连接数量-->    
+        <property name="maxActive" value="30"/>  
+        <!--minIdle: 最小空闲连接-->    
+        <property name="minIdle" value="5"/>  
+        <!--maxIdle: 最大空闲连接-->    
+        <property name="maxIdle" value="20"/>  
+        <!--initialSize: 初始化连接-->    
+        <property name="initialSize" value="10"/> 
+         <!--removeAbandoned: 是否自动回收超时连接-->    
+        <property name="removeAbandoned"  value="true"/>  
+	</bean> 
+   -->>transactionMaanger:
+   <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+		<property name="globalRollbackOnParticipationFailure" value="false" /> 
+	</bean>
+   -->>注解事务配置：
+   <tx:annotation-driven transaction-manager="transactionManager" />
+   

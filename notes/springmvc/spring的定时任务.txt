@@ -1,0 +1,13 @@
+在配置中加入:
+<task:annotation-driven  />
+
+配置头加上:
+xmlns:task="http://www.springframework.org/schema/task"
+和
+http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd
+绑定Task.
+
+然后在需要定时执行的方法上加上注解：
+@Scheduled(fixedDelay=1000),即每秒执行一次。
+
+或者@Scheduled(cron="0 * * * * *"),可以设置几天几小时之类的时间
