@@ -27,6 +27,7 @@
 	
 服务器[/etc/sysconfig/docker]
 OPTIONS="-H tcp://127.0.0.1:4243"
+同时vim ~/.bashrc文件，加上export DOCKER_HOST=tcp://localhost:4243
 
 5.Credentials：
 	git url使用https链接,用户名密码直接填git的用户名密码

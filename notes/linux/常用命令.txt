@@ -19,6 +19,15 @@
 	7、*.tar.Z 用tar –xZf 解压
 	8、*.rar 用 unrar e解压
 	9、*.zip 用 unzip 解压
+	
+7.grep文件中查找关键字
+	grep "0101034175" /data/transaction.20170118.log
+	awk  相当于String.split(" ")
+	
+8.管道符 |
+	Linux所提供的管道符“|”将两个命令隔开，管道符左边命令的输出就会作为管道符右边命令的输入
+	$(docker ps |grep "jlh-core-service-a" | awk '{print $1}')
+
 
 
 
