@@ -28,6 +28,8 @@
 	Linux所提供的管道符“|”将两个命令隔开，管道符左边命令的输出就会作为管道符右边命令的输入
 	$(docker ps |grep "jlh-core-service-a" | awk '{print $1}')
 
+9.whereis命令 查找软件安装位置:
+	如 whereis jenkins
 
 
 
