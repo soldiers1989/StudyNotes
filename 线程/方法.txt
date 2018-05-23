@@ -1,0 +1,14 @@
+1.获取当前线程名称:
+	Thread.currentThread().getName()
+	
+2.新建线程池:
+	public class FishBuryPointThreadPool {
+    /**
+     * 核心线程池5,最多线程数10,空闲线程等待30秒,队列长度1000,丢弃拒绝的数据
+     */
+    public static ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 30, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(1000), new ThreadPoolExecutor.DiscardPolicy());
+	}
+	
+	FishBuryPointThreadPool.executor.execute(() -> {
+         System.out.println(name+"    "+Thread.currentThread().getName());
+    });
