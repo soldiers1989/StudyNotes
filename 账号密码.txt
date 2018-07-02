@@ -126,3 +126,5 @@ Oracle账号密码：DASHBOARD_WECHAT_DEV/@@@wechat_developer2016!@#
 腾讯云 centos登录账号/密码 root/HW3fgQaws3s 公网IP: 123.207.253.164
 		安装的mysql用户名密码: root/Liuc@1234   liucan/LiuCan@1234(允许远程登录)
 		jenkins账号密码: root1/000000  全名: liucan
+		
+		123.206.80.209 root BHRfn993gE
