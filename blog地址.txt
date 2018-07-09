@@ -109,7 +109,9 @@ http://spring4all.com/article/51
 《使用zipkin做分布式链路监控》
 http://spring4all.com/article/50
 }
-
+-------------------------------------WF---------------------------------------
 
 安装fastDfs分布式文件服务器:
 https://blog.csdn.net/m0_37797991/article/details/73381739
+jenkins+tomcat构建springboot
+https://blog.csdn.net/zjh_746140129/article/details/80904876
