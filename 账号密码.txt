@@ -128,3 +128,8 @@ Oracle账号密码：DASHBOARD_WECHAT_DEV/@@@wechat_developer2016!@#
 		jenkins账号密码: root1/000000  全名: liucan
 		
 		123.206.80.209 root BHRfn993gE
+		
+ngrok地址用户密码		
+https://www.ngrok.cc/user.html 128145.。。@qq.com  13770...
+
+花生壳 liucan88 lc180...
